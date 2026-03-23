@@ -1,0 +1,126 @@
+body{
+font-family: Arial;
+background:#f4f4f4;
+}
+
+.tarjeta{
+background:rgb(92, 88, 88);
+padding:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.tarjeta img{
+width:100%;
+border-radius:8px;
+margin:10px 0;
+transition: transform 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: rgb(119, 95, 141);
+    color: rgb(43, 102, 102);
+}
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    position: relative;
+    animation: colorcito 3s infinite;
+}
+@keyframes colorcito {
+0%{
+    left: 0px;
+    background-color: blue;
+}
+50%{
+    left: 200px;
+    background-color: red;
+}
+100%{
+    left: 0px;
+    background-color: green;
+}
+}
+
+.aparecer{
+    animation: aparecerTexto 3s ease-in;
+}
+@keyframes aparecerTexto{
+from{
+    opacity: 0;
+to{
+    opacity: 1;
+}
+
+}
+}
+
+.imgZoom{
+    display: block;
+    margin: 0 auto;
+    animation: zoom 2s infinite;
+}
+@keyframes zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1,2) ;
+    }
+}
+
+@keyframes recorrido{
+    0%{
+        left: 0;
+        bottom: 0;
+    }
+    25%{
+        left: 0;
+        bottom: 90%;
+    }
+    50%{
+        left: 90%;
+        bottom: 90%;
+    }
+    75%{
+        left: 90%;
+        bottom: 0;
+    }
+    100%{
+        left: 0;
+        bottom: 0;
+    }
+}
+.pelotita{
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: recorrido 5s linear infinite;
+}
+
+
+
+
